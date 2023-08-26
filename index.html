@@ -3,10 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">k
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
     <title>Odin Signup Form</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="form-background">
+            <div class="flex">
+                <img src="./images/odin-lined.png" alt="TOP Logo" class="odin-logo">
+                <p>Odin</p>
+            </div>
+            <div class="photo-credits">
+                <p>Photo by <u>Halie West</u> on Unsplash</p>
+            </div>
+        </div>
+        <div class="form-details">
+            <div class="form-details__header">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium quas omnis aspernatur architecto, doloribus neque?</p>
+                <h3>Lorem ipsum dolor sit.</h3>
+            </div>
+            <div class="form-details__input">
+                <h2>Let's Do this!</h2>
+                <form class="form-actual" id="login-form" autocomplete="off">
+                    <div>
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="email" name="phoneNumber" id="phoneNumber" required>
+                    </div>
+                    <div>
+                        <label for="basePassword">Password</label>
+                        <input type="password" name="basePassword" id="basePassword" required>
+                    </div>
+                    <div>
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" required>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <button type="submit" class="btn-create">Create Account</button>
+
+                <p>Already have an account? <span ><a href="" class="redirect">Login</a></span></h>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
