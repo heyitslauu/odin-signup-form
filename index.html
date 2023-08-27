@@ -30,36 +30,57 @@
                 <form class="form-actual" id="login-form" autocomplete="off">
                     <div>
                         <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" id="firstName" required>
+                        <input type="text" name="firstName" id="firstName" pattern="[a-zA-Z][a-zA-Z\s]*" minlength="2">
                     </div>
                     <div>
                         <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" id="lastName" required>
+                        <input type="text" name="lastName" id="lastName" pattern="[a-zA-Z][a-zA-Z\s]*" minlength="2">
                     </div>
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" name="email" id="email">
                     </div>
                     <div>
                         <label for="phoneNumber">Phone Number</label>
-                        <input type="email" name="phoneNumber" id="phoneNumber" required>
+                        <input type="text" name="phoneNumber" id="phoneNumber" minlength="11" maxlength="11">
                     </div>
                     <div>
                         <label for="basePassword">Password</label>
-                        <input type="password" name="basePassword" id="basePassword" required>
+                        <input type="password" name="basePassword" minlength="8" id="basePassword">
+                        <div class="error-msg"></div>
                     </div>
                     <div>
                         <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" name="confirmPassword" id="confirmPassword" required>
+                        <input type="password" name="confirmPassword" minlength="8" id="confirmPassword">
+                        <div class="error-msg"></div>
                     </div>
                 </form>
             </div>
             <div>
                 <button type="submit" class="btn-create">Create Account</button>
+                <p class="terms">By signing up, you are agreeing to our <span class="accent-text">Terms and Conditions</span> and <span class="accent-text">Privacy Policy</span></p>
 
                 <p>Already have an account? <span ><a href="" class="redirect">Login</a></span></h>
             </div>
         </div>
+        <div id="policy" >
+            <div class="modal">
+                <div>
+                    <h2 class="text-center">Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque delectus veritatis quos numquam in.</p>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officia maiores vero quidem?</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officia maiores vero quidem?</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officia maiores vero quidem?</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officia maiores vero quidem?</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officia maiores vero quidem?</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
+
+   
+    <script src="app.js"></script>
 </body>
 </html>
